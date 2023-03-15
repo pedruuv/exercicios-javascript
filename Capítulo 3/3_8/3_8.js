@@ -27,17 +27,18 @@ function ladosTriangulo(){
 
     if(ladoA < ladoB + ladoC && ladoB < ladoA + ladoC && ladoC < ladoA + ladoB){
         outExiste.textContent = "Lados podem formar um Triângulo.";
+        if(ladoA == ladoB && ladoB== ladoC){
+            outTipo.textContent = "Tipo: Equilátero";
+        } else if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC){
+            outTipo.textContent = "Tipo: Isósceles";
+        } else if(ladoA != ladoB && ladoB != ladoC){
+            outTipo.textContent = "Tipo: Escaleno";
+        }
     } else{
         outExiste.textContent = "Lados não podem formar um Triângulo.";
     }
 
-    if(ladoA == ladoB && ladoB== ladoC){
-        outTipo.textContent = "Tipo: Equilátero";
-    } else if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC){
-        outTipo.textContent = "Tipo: Isósceles";
-    } else{
-        outTipo.textContent = "Tipo: Escaleno";
-    }
+
 }
 
 var btVerificar = document.querySelector("#btVerificar");
