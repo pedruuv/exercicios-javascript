@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex7_5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="titulo">Veterinária Avenida</h1>
+    <img src="./assets/4198540.jpg" alt="Foto Veterinária" class="ilustracao" />
+    <div class="conteudo">
+      <p>
+        Valor da Vacina: <input type="text" id="inValor" class="input_text" />
+      </p>
+      <p>
+        Possui Convênio: <input type="radio" name="opcoes" id="sim" /><label for="sim">Sim</label>
+        <input type="radio" name="opcoes" id="nao" checked/> <label for="nao">Não</label>
+        <br />
+        <span id="opcoes" class="oculta">Convênio:</span>
+        <select id="inConvenio" class="oculta">
+          <option value="amigo">Amigo dos Animais</option>
+          <option value="saude">Saúde Animal</option>
+        </select>  
+      </p>
+      <input
+        type="button"
+        value="Calcular Desconto"
+        id="btCalcular"
+        class="botao"
+      />
+      <h3 id="outDesconto"></h3>
+      <h3 id="outValor"></h3>
+
+      <script src="7_5.js"></script>
+    </div>
+  </body>
+</html>
