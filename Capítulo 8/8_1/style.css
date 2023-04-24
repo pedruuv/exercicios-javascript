@@ -1,0 +1,22 @@
+.coresBrasil{
+    color: black;
+    background-color: red;
+}
+
+.coresPelotas{
+    color: blue;
+    background-color: yellow;
+}
+
+.coresFarroupilha{
+    color: green;
+    background-color: white;
+}
+
+.oculta{
+    opacity: 0;
+}
+
+.exibe{
+    opacity: 1;
+}
